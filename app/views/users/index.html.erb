@@ -1,0 +1,8 @@
+<h2>Welcome to My App </h2>
+<h3>User Posts</h3>
+
+<% @posts.each do |post| %>
+<p><strong><%= link_to "Title:",  new_user_post_comment_path(current_user, post) %></strong> <%= post.title %></p>
+<p><strong>Description:</strong> <%= post.description %></p><br>
+	
+<% end %>

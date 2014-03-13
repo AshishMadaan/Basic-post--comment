@@ -1,0 +1,28 @@
+<h2>Create Post Here </h2>
+
+<%= form_for @post, :url => { :action => "create" } do |f|%>
+
+<table>
+	<tr>
+		<td>
+			<%= f.label("Title") %>
+		</td>
+		<td>
+			<%= f.text_field("title") %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= f.label("Description") %>
+		</td>
+		<td>
+			<%= f.text_area("description") %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<%= f.submit("Save") %>
+		</td>
+	</tr>
+</table>
+<% end %>

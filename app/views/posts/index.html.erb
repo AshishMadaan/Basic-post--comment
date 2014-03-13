@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<td>Title</td>
+		<td>Description</td>
+	</tr>
+
+<% @posts.each do |post| %>
+
+	<tr>
+		<td><%= @post.title %></td>
+		<td><%= @post.description %></td>
+	</tr>
+	<% end %>
+</table>
